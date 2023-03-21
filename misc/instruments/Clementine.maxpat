@@ -104,23 +104,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 544.0, 232.0, 67.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "scales.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js scales.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -446,14 +429,7 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "scales.js",
-				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
-				"patcherrelativepath" : "../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
