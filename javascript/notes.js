@@ -8,12 +8,31 @@ outlets = 1;
 // Store Input
 var values = [0, 0, 0];
 
+// The `msg_` functions get called on input of the appropriate type regardless of inlet
+// `inlet` property reports the inlet number
 function msg_int(value) {
-  // `inlet` property reports the inlet number
   values[inlet] = value;
-  bang();
+  outlet(inlet, value);
 }
 
+function msg_float(value) {
+  values[inlet] = value;
+  outlet(inlet, value);
+}
+
+// Called when a bang is received
 function bang() {
-  outlet(0, result);
+  // The string `"bang"` sends a bang out the outlet
+  outlet(0, "bang");
+}
+
+// Called when a message starts with `list`
+function list(a) {
+  post("the list contains",arguments.length, "elements");
+}
+
+// Called if there's no function match
+function anything(val) {
+    if (arguments.length) // were there any arguments?
+      stuff[messagename] = val;
 }
