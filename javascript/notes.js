@@ -3,7 +3,7 @@
 
 // Inlets & Outlets
 inlets = 3;
-outlets = 1;
+outlets = 3;
 
 // Store Input
 var values = [0, 0, 0];
@@ -23,21 +23,21 @@ function msg_float(value) {
 // Called when a bang is received
 function bang() {
   // The string `"bang"` sends a bang out the outlet
-  outlet(0, "bang");
+  outlet(inlet, "bang");
 }
 
 // Called when a message starts with `list`
 function list(value) {
-  outlet(0, value)
-  for (let i = 0; i < arguments.length; i++) {
-    outlet(i, arguments[i]);
+  values[inlet] = value;
+  if (arguments.length > 0) {
+    outlet(inlet, value)
   }
 }
 
 // Called if there's no function match
 function anything(value) {
-  outlet(0, value)
-  for (let i = 0; i < arguments.length; i++) {
-    outlet(i, arguments[i]);
+  values[inlet] = value;
+  if (arguments.length > 0) {
+    outlet(inlet, value)
   }
 }
