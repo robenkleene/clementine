@@ -27,8 +27,11 @@ function bang() {
 }
 
 // Called when a message starts with `list`
-function list(a) {
-  post("the list contains",arguments.length, "elements");
+function list(value) {
+  outlet(0, value)
+  for (let i = 0; i < arguments.length; i++) {
+    outlet(i, arguments[i]);
+  }
 }
 
 // Called if there's no function match
