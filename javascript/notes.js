@@ -32,7 +32,9 @@ function list(a) {
 }
 
 // Called if there's no function match
-function anything(val) {
-    if (arguments.length) // were there any arguments?
-      stuff[messagename] = val;
+function anything(value) {
+  outlet(0, value)
+  for (let i = 0; i < arguments.length; i++) {
+    outlet(i, arguments[i]);
+  }
 }
