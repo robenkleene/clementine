@@ -3,7 +3,11 @@ autowatch = 1;
 
 // Inlets & Outlets
 inlets = 3;
-outlets = 3;
+// 1: Base note
+// 2: Step count
+// 3: Scale intervals
+outlets = 1;
+
 
 // Store input
 var values = [0, 0, 0];
