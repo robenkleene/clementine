@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 256.0, 100.0, 1118.0, 876.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -399,6 +399,23 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 15.0, 75.0, 62.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"filename" : "notes.js",
+										"parameter_enable" : 0
+									}
+,
+									"text" : "js notes.js"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "int: Velocity",
 									"id" : "obj-6",
 									"index" : 4,
@@ -475,7 +492,28 @@
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 1 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 2 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 104.0, 208.0, 256.0, 22.0 ],
@@ -572,7 +610,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 90.0, 390.0, 400.0, 170.0 ],
+					"patching_rect" : [ 88.0, 360.0, 400.0, 170.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 72.0, 400.0, 170.0 ],
 					"saved_attribute_attributes" : 					{
@@ -823,7 +861,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "notes.js",
+				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
