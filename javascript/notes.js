@@ -29,8 +29,11 @@ function list(value) {
 function trigger_output() {
   var intervals = values[INTERVALS];
   var stepCount = values[STEP_COUNT];
-  var baseNote = values[BASE_NOTE];
-  for (let i = 0; i < intervals.length; i++) {
-    
+  var note = values[BASE_NOTE];
+  outlet(0, note);
+  for (let i = 0; i < stepCount - 1; i++) {
+    var interval = i % intervals.length;
+    note += interval;
+    outlet(0, note);
   }
 }
