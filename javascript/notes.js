@@ -2,10 +2,10 @@
 autowatch = 1;
 
 // Inlets & Outlets
+const BASE_NOTE = 0;
+const STEP_COUNT = 1;
+const INTERVALS = 2;
 inlets = 3;
-// 1: Base note
-// 2: Step count
-// 3: Scale intervals
 outlets = 1;
 
 // Store input
@@ -21,14 +21,16 @@ function bang() {
 }
 
 function list(value) {
-  for (var i = 0; i < arguments.length; i++) {
-    values[i] = arguments[i];
-  }
-
   var arr = arrayfromargs(value, arguments);
   values[inlet] = arr;
   trigger_output();
 }
 
 function trigger_output() {
+  var intervals = values[INTERVALS];
+  var stepCount = values[STEP_COUNT];
+  var baseNote = values[BASE_NOTE];
+  for (let i = 0; i < intervals.length; i++) {
+    
+  }
 }
