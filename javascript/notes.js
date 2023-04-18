@@ -2,9 +2,9 @@
 autowatch = 1;
 
 // Inlets & Outlets
-const BASE_NOTE = 0;
-const STEP_COUNT = 1;
-const INTERVALS = 2;
+BASE_NOTE = 0;
+STEP_COUNT = 1;
+INTERVALS = 2;
 inlets = 3;
 outlets = 1;
 
@@ -36,4 +36,8 @@ function trigger_output() {
     note += interval;
     outlet(0, note);
   }
+}
+
+function log(obj) {
+  post(JSON.stringify(obj));
 }
