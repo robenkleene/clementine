@@ -13,7 +13,9 @@ var values = [0, 0, [0]];
 
 function msg_int(value) {
   values[inlet] = value;
-  trigger_output();
+  if (inlet == 0) {
+    trigger_output();
+  }
 }
 
 function bang() {
@@ -23,7 +25,9 @@ function bang() {
 function list(value) {
   var arr = arrayfromargs(value, arguments);
   values[inlet] = arr;
-  trigger_output();
+  if (inlet == 0) {
+    trigger_output();
+  }
 }
 
 function trigger_output() {
