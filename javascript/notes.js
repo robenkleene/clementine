@@ -13,9 +13,6 @@ var values = [0, 0, [0]];
 
 function msg_int(value) {
   values[inlet] = value;
-  if (inlet == 0) {
-    trigger_output();
-  }
 }
 
 function bang() {
@@ -36,7 +33,7 @@ function trigger_output() {
   var note = values[BASE_NOTE];
   outlet(0, note);
   for (var i = 0; i < stepCount - 1; i++) {
-    var interval = i % intervals.length;
+    var interval = i % (intervals.length > 0 ? intervals.length : 1);
     note += interval;
     outlet(0, note);
   }
