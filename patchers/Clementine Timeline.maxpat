@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 984.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 972.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -175,8 +175,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 105.0, 58.0, 22.0 ],
-					"text" : "set Major"
+					"patching_rect" : [ 640.0, 112.0, 80.0, 22.0 ],
+					"text" : "symbol Major"
 				}
 
 			}
@@ -187,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 585.0, 195.0, 73.0, 22.0 ],
+					"patching_rect" : [ 581.0, 262.0, 73.0, 22.0 ],
 					"text" : "prepend get"
 				}
 
@@ -222,7 +222,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 645.0, 135.0, 35.0, 22.0 ],
+					"patching_rect" : [ 592.0, 112.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -234,7 +234,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 540.0, 75.0, 29.5, 22.0 ],
+					"patching_rect" : [ 536.0, 80.0, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -246,7 +246,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 750.0, 150.0, 50.0, 22.0 ],
+					"patching_rect" : [ 728.0, 144.0, 50.0, 22.0 ],
 					"text" : "getkeys"
 				}
 
@@ -258,7 +258,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 540.0, 105.0, 47.0, 22.0 ],
+					"patching_rect" : [ 536.0, 112.0, 47.0, 22.0 ],
 					"text" : "zl.iter 1"
 				}
 
@@ -270,7 +270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 540.0, 135.0, 96.0, 22.0 ],
+					"patching_rect" : [ 536.0, 144.0, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -293,7 +293,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 540.0, 45.0, 63.0, 22.0 ],
+					"patching_rect" : [ 536.0, 48.0, 63.0, 22.0 ],
 					"text" : "r #0scales"
 				}
 
@@ -307,7 +307,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.0, 165.0, 100.0, 22.0 ]
+					"patching_rect" : [ 536.0, 184.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -318,7 +318,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 690.0, 45.0, 58.0, 22.0 ],
+					"patching_rect" : [ 648.0, 48.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -330,7 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 750.0, 120.0, 105.0, 22.0 ],
+					"patching_rect" : [ 728.0, 112.0, 105.0, 22.0 ],
 					"text" : "import scales.json"
 				}
 
@@ -341,7 +341,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.0, 240.0, 160.0, 90.0 ]
+					"patching_rect" : [ 704.0, 272.0, 160.0, 90.0 ]
 				}
 
 			}
@@ -352,7 +352,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 690.0, 75.0, 42.0, 22.0 ],
+					"patching_rect" : [ 648.0, 80.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -364,7 +364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 705.0, 180.0, 65.0, 22.0 ],
+					"patching_rect" : [ 704.0, 176.0, 65.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -393,14 +393,14 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 764.0, 434.0, 640.0, 476.0 ],
+						"rect" : [ 591.0, 576.0, 640.0, 476.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
 						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
+						"gridsize" : [ 8.0, 8.0 ],
 						"gridsnaponopen" : 2,
 						"objectsnaponopen" : 0,
 						"statusbarvisible" : 2,

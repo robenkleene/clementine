@@ -27,6 +27,10 @@ function list(value) {
   }
 }
 
+function anything(value) {
+  post("anything");
+}
+
 function trigger_output() {
   var intervals = values[INTERVALS];
   var stepCount = values[STEP_COUNT];
