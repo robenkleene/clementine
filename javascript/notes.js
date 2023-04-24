@@ -20,7 +20,7 @@ function bang() {
 }
 
 function list(value) {
-  var arr = arrayfromargs(value, arguments);
+  var arr = arrayfromargs(value.toString(), arguments);
   values[inlet] = arr;
   if (inlet == 0) {
     trigger_output();
