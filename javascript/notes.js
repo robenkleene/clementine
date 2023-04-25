@@ -2,9 +2,9 @@
 autowatch = 1;
 
 // Inlets & Outlets
-BASE_NOTE = 0;
+INTERVALS = 0;
 STEP_COUNT = 1;
-INTERVALS = 2;
+BASE_NOTE = 2;
 inlets = 3;
 outlets = 1;
 
@@ -25,10 +25,6 @@ function list(value) {
   if (inlet == 0) {
     trigger_output();
   }
-}
-
-function anything(value) {
-  post("anything");
 }
 
 function trigger_output() {
