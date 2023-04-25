@@ -31,6 +31,9 @@ function trigger_output() {
   var intervals = values[INTERVALS];
   var stepCount = values[STEP_COUNT];
   var note = values[BASE_NOTE];
+  post("intervals = " + intervals + "\n");
+  post("stepCount = " + stepCount + "\n");
+  post("note = " + note + "\n");
   outlet(0, note);
   for (var i = 0; i < stepCount - 1; i++) {
     var interval = i % (intervals.length > 0 ? intervals.length : 1);
