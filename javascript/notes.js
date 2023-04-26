@@ -9,10 +9,11 @@ inlets = 3;
 outlets = 1;
 
 // Store input
-var values = [0, 0, [0]];
+var values = [0, 0, []];
 
 function msg_int(value) {
   values[inlet] = value;
+  trigger_output();
 }
 
 function bang() {
@@ -34,6 +35,9 @@ function trigger_output() {
   post("intervals = " + intervals + "\n");
   post("stepCount = " + stepCount + "\n");
   post("note = " + note + "\n");
+  if (stepCount == 0) {
+    return;
+  }
   outlet(0, note);
   for (var i = 0; i < stepCount - 1; i++) {
     var interval = i % (intervals.length > 0 ? intervals.length : 1);
