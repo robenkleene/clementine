@@ -1,5 +1,6 @@
 // Re-compile the file automatically when it changes
-autowatch = 1;
+// This is probably pointless because this script stores state in `var values`
+// autowatch = 1;
 
 // Inlets & Outlets
 INTERVALS = 0;
@@ -22,7 +23,8 @@ function bang() {
 
 function list(value) {
   var arr = arrayfromargs(value.toString(), arguments);
-  values[inlet] = arr;
+  values[inlet] = arr.map(Number);
+
   if (inlet == 0) {
     trigger_output();
   }
@@ -40,9 +42,11 @@ function trigger_output() {
   }
   outlet(0, note);
   for (var i = 0; i < stepCount - 1; i++) {
-    var interval = i % (intervals.length > 0 ? intervals.length : 1);
-    note += interval;
-    outlet(0, note);
+    if (intervals.length > 0) {
+      var index = i % intervals.length;
+      note += intervals[index];
+      outlet(0, note);
+    }
   }
 }
 
