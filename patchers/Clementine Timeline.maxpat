@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 793.0, 100.0, 537.0, 983.0 ],
+		"rect" : [ 390.0, 100.0, 935.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 144.0, 24.0, 24.0 ],
+					"patching_rect" : [ 136.0, 152.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 40.0, 32.0, 24.0, 24.0 ]
 				}
@@ -82,7 +82,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 256.0, 69.0, 22.0 ],
+					"patching_rect" : [ 112.0, 264.0, 69.0, 22.0 ],
 					"text" : "print output"
 				}
 
@@ -106,7 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 152.0, 70.0, 22.0 ],
+					"patching_rect" : [ 352.0, 160.0, 70.0, 22.0 ],
 					"text" : "loadmess 4"
 				}
 
@@ -119,7 +119,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 280.0, 152.0, 41.0, 48.0 ],
+					"patching_rect" : [ 288.0, 160.0, 41.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 88.0, 8.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
@@ -144,7 +144,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 344.0, 184.0, 48.0, 15.0 ],
+					"patching_rect" : [ 352.0, 192.0, 48.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.0, 8.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -223,7 +223,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 176.0, 72.0, 22.0 ],
+					"patching_rect" : [ 112.0, 184.0, 72.0, 22.0 ],
 					"text" : "r #0numeric"
 				}
 
@@ -417,7 +417,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 395.0, 236.0, 640.0, 476.0 ],
+						"rect" : [ 958.0, 219.0, 722.0, 706.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -452,7 +452,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 288.0, 160.0, 150.0, 127.0 ],
+									"patching_rect" : [ 288.0, 160.0, 151.0, 127.0 ],
 									"text" : "Don't store the step count and base note in separate values because that makes it hard to have the script output on every value change. Just rely on the scripts internal state storage for those values which is cleaner."
 								}
 
@@ -508,7 +508,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 270.0, 30.0, 30.0 ]
+									"patching_rect" : [ 16.0, 352.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -583,7 +583,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 104.0, 208.0, 256.0, 22.0 ],
+					"patching_rect" : [ 112.0, 216.0, 256.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -602,7 +602,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.0, 152.0, 77.0, 22.0 ],
+					"patching_rect" : [ 200.0, 160.0, 77.0, 22.0 ],
 					"text" : "loadmess 60"
 				}
 
@@ -615,7 +615,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 192.0, 184.0, 44.0, 15.0 ],
+					"patching_rect" : [ 200.0, 192.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 40.0, 8.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -639,7 +639,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 88.0, 328.0, 85.0, 22.0 ],
+					"patching_rect" : [ 88.0, 120.0, 85.0, 22.0 ],
 					"text" : "prepend nstep"
 				}
 
