@@ -21,8 +21,8 @@ function bang() {
   trigger_output();
 }
 
-function list(value) {
-  var arr = arrayfromargs(value.toString(), arguments);
+function list() {
+  var arr = arrayfromargs(arguments);
   values[inlet] = arr.map(Number);
 
   if (inlet == 0) {
