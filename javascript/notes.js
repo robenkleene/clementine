@@ -37,14 +37,15 @@ function trigger_output() {
   if (stepCount == 0) {
     return;
   }
-  outlet(0, note);
+  var notes = [note]
   for (var i = 0; i < stepCount - 1; i++) {
     if (intervals.length > 0) {
       var index = i % intervals.length;
       note += intervals[index];
-      outlet(0, note);
+      notes.push(note);
     }
   }
+  outlet(0, notes.join(' '));
 }
 
 function log(obj) {
