@@ -4,6 +4,11 @@
 // Inlets & Outlets
 inlets = 6;
 outlets = 1;
+INLET_ORDER = 1;
+INLET_REPEAT = 2;
+INLET_RESTS = 3;
+INLET_VELOCITY = 4;
+INLET_DURATION = 5;
 
 // Store input
 var values = [[], 0, 0, 0, 0, 0];
