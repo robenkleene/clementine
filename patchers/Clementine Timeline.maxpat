@@ -792,7 +792,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 851.0, 145.0, 466.0, 706.0 ],
+						"rect" : [ 851.0, 145.0, 818.0, 938.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -840,7 +840,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.0, 328.0, 71.0, 22.0 ],
+									"patching_rect" : [ 16.0, 248.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -852,7 +852,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.0, 360.0, 91.0, 22.0 ],
+									"patching_rect" : [ 16.0, 280.0, 91.0, 22.0 ],
 									"text" : "prepend pitch 1"
 								}
 
@@ -864,7 +864,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 88.0, 400.0, 106.0, 22.0 ],
+									"patching_rect" : [ 208.0, 280.0, 106.0, 22.0 ],
 									"text" : "prepend velocity 1"
 								}
 
@@ -876,7 +876,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 144.0, 432.0, 109.0, 22.0 ],
+									"patching_rect" : [ 376.0, 280.0, 109.0, 22.0 ],
 									"text" : "prepend duration 1"
 								}
 
@@ -888,7 +888,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 72.0, 256.0, 150.0, 22.0 ],
+									"patching_rect" : [ 208.0, 192.0, 150.0, 22.0 ],
 									"text" : "clementine_list_one_value"
 								}
 
@@ -900,7 +900,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 256.0, 256.0, 150.0, 22.0 ],
+									"patching_rect" : [ 376.0, 192.0, 150.0, 22.0 ],
 									"text" : "clementine_list_one_value"
 								}
 
@@ -912,7 +912,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 456.0, 16.0, 151.0, 127.0 ],
+									"patching_rect" : [ 536.0, 16.0, 151.0, 127.0 ],
 									"text" : "Don't store the step count and base note in separate values here because that makes it hard to have the script output on every value change. Just rely on the scripts internal state storage for those values which is cleaner."
 								}
 
@@ -924,7 +924,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.0, 176.0, 161.0, 22.0 ],
+									"patching_rect" : [ 16.0, 192.0, 161.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "notes.js",
 										"parameter_enable" : 0
@@ -956,7 +956,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 270.0, 15.0, 30.0, 30.0 ]
+									"patching_rect" : [ 376.0, 16.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -968,7 +968,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 496.0, 30.0, 30.0 ]
+									"patching_rect" : [ 16.0, 352.0, 30.0, 30.0 ]
 								}
 
 							}
