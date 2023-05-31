@@ -31,3 +31,7 @@ function duration(_) {
   var arr = arrayfromargs(messagename, arguments);
   outlet(0, arr.join(" "));
 }
+
+// function randomizeValues
+
+// pitch 1 60. 60. 60. 60. 60. 60. 60. 60. 60. 60. 60.
