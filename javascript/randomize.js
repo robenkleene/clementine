@@ -17,17 +17,17 @@ function msg_float(value) {
   values[inlet] = value;
 }
 
-function pitch(value) {
+function pitch(_) {
   var arr = arrayfromargs(messagename, arguments);
   outlet(0, arr.join(" "));
 }
 
-function velocity(value) {
+function velocity(_) {
   var arr = arrayfromargs(messagename, arguments);
   outlet(0, arr.join(" "));
 }
 
-function duration(value) {
+function duration(_) {
   var arr = arrayfromargs(messagename, arguments);
   outlet(0, arr.join(" "));
 }
