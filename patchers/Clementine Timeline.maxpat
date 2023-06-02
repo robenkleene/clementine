@@ -46,7 +46,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 432.0, 192.0, 44.0, 15.0 ],
+					"patching_rect" : [ 416.0, 192.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 184.0, 8.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -882,6 +882,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -927,7 +928,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 568.0, 8.0, 30.0, 30.0 ]
+									"patching_rect" : [ 560.0, 8.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1159,7 +1160,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 1 ],
+									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
 
