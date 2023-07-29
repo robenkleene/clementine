@@ -1,5 +1,5 @@
 // Re-compile the file automatically when it changes
-// autowatch = 1;
+autowatch = 1;
 
 // Inlets & Outlets
 inlets = 6;
@@ -39,4 +39,5 @@ function duration(_) {
 }
 
 function randomizeValues(arr) {
+  outlet(0, arr.join(" "));
 }
