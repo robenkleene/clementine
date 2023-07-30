@@ -261,7 +261,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1017.0, 269.0, 711.0, 695.0 ],
+						"rect" : [ 983.0, 269.0, 711.0, 695.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -297,7 +297,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 144.0, 71.0, 22.0 ],
+									"patching_rect" : [ 40.0, 144.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -309,9 +309,9 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 104.0, 296.0, 22.0 ],
+									"patching_rect" : [ 40.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "randomize.js",
+										"filename" : "randomize",
 										"parameter_enable" : 0
 									}
 ,
@@ -420,13 +420,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-10", 0 ]
+									"order" : 1,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
+									"order" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
 

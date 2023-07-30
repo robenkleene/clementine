@@ -20,21 +20,21 @@ function msg_float(value) {
 function pitch(_) {
   var arr = arrayfromargs(messagename, arguments);
   var randomizedValues = randomizeValues(arr.slice(2));
-  arr.splice(2, randomizedValues.length, ...randomizeValues);
+  // arr.splice(2, randomizedValues.length, ...randomizeValues);
   outlet(0, arr.join(" "));
 }
 
 function velocity(_) {
   var arr = arrayfromargs(messagename, arguments);
   var randomizedValues = randomizeValues(arr.slice(2));
-  arr.splice(2, randomizedValues.length, ...randomizeValues);
+  // arr.splice(2, randomizedValues.length, ...randomizeValues);
   outlet(0, arr.join(" "));
 }
 
 function duration(_) {
   var arr = arrayfromargs(messagename, arguments);
   var randomizedValues = randomizeValues(arr.slice(2));
-  arr.splice(2, randomizedValues.length, ...randomizeValues);
+  // arr.splice(2, randomizedValues.length, ...randomizeValues);
   outlet(0, arr.join(" "));
 }
 
