@@ -39,5 +39,5 @@ function duration(_) {
 }
 
 function randomizeValues(arr) {
-  outlet(0, arr.join(" "));
+  return [];
 }

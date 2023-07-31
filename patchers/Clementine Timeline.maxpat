@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 330.0, 100.0, 935.0, 983.0 ],
+		"rect" : [ 923.0, 110.0, 935.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -261,7 +261,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 983.0, 269.0, 711.0, 695.0 ],
+						"rect" : [ 857.0, 269.0, 711.0, 695.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -292,6 +292,17 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 40.0, 200.0, 91.0, 22.0 ],
+									"text" : "print randomize"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -311,7 +322,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "randomize",
+										"filename" : "randomize.js",
 										"parameter_enable" : 0
 									}
 ,
@@ -414,6 +425,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-9", 1 ],
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-10", 0 ]
 								}
 
 							}
