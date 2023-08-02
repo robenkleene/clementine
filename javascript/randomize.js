@@ -17,6 +17,11 @@ function msg_float(value) {
   values[inlet] = value;
 }
 
+// TODO:
+// Iterate through each note with a `0` to `1` chance of applying the factors for each input type
+
+// Order: The note gets swapped with a random later note
+// Repeat: The note replaces the next note
 function pitch(_) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
@@ -24,6 +29,9 @@ function pitch(_) {
   outlet(0, arr.join(" "));
 }
 
+// Velocity: `1` means +/- that total value, e.g.:
+// velocity `18` with a factor of `1` means `0-36`
+// velocity `127` with a factor of `1` means `0-127`
 function velocity(_) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
@@ -31,6 +39,8 @@ function velocity(_) {
   outlet(0, arr.join(" "));
 }
 
+// Same as velocity, but we have fixed values:
+// 7.5 15 30 60 120 240 480 960
 function duration(_) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
