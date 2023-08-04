@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 923.0, 110.0, 935.0, 983.0 ],
+		"rect" : [ 1275.0, 145.0, 935.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,17 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 296.0, 100.0, 22.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "live.text",
@@ -317,12 +306,12 @@
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
-									"numinlets" : 6,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "randomize.js",
+										"filename" : "randomize",
 										"parameter_enable" : 0
 									}
 ,
@@ -423,13 +412,6 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 1 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-10", 0 ]
 								}
@@ -448,34 +430,6 @@
 									"destination" : [ "obj-9", 0 ],
 									"order" : 0,
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 5 ],
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 2 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 3 ],
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 4 ],
-									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -537,7 +491,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.0, 248.0, 71.0, 22.0 ],
+					"patching_rect" : [ 672.0, 288.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -549,7 +503,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 720.0, 216.0, 55.0, 22.0 ],
+					"patching_rect" : [ 672.0, 256.0, 55.0, 22.0 ],
 					"text" : "zl slice 1"
 				}
 
@@ -678,7 +632,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 581.0, 262.0, 73.0, 22.0 ],
+					"patching_rect" : [ 576.0, 216.0, 73.0, 22.0 ],
 					"text" : "prepend get"
 				}
 
@@ -701,7 +655,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 280.0, 74.0, 22.0 ],
+					"patching_rect" : [ 672.0, 320.0, 74.0, 22.0 ],
 					"text" : "s #0numeric"
 				}
 
@@ -737,7 +691,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 728.0, 144.0, 50.0, 22.0 ],
+					"patching_rect" : [ 728.0, 168.0, 50.0, 22.0 ],
 					"text" : "getkeys"
 				}
 
@@ -772,7 +726,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 776.0, 216.0, 65.0, 22.0 ],
+					"patching_rect" : [ 736.0, 256.0, 65.0, 22.0 ],
 					"text" : "s #0scales"
 				}
 
@@ -834,7 +788,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 704.0, 312.0, 160.0, 90.0 ]
+					"patching_rect" : [ 656.0, 352.0, 160.0, 90.0 ]
 				}
 
 			}
@@ -857,7 +811,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 704.0, 176.0, 65.0, 22.0 ],
+					"patching_rect" : [ 656.0, 216.0, 65.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
