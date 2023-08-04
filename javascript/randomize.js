@@ -46,7 +46,7 @@ function pitch(value) {
       }
     }
   }
-  arr.splice(2, values.length, values);
+  arr = arr.slice(0, 1).concat(values);
   outlet(0, arr.join(" "));
 }
 

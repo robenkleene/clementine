@@ -323,7 +323,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 200.0, 91.0, 22.0 ],
+									"patching_rect" : [ 64.0, 208.0, 91.0, 22.0 ],
 									"text" : "print randomize"
 								}
 
@@ -335,7 +335,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 144.0, 71.0, 22.0 ],
+									"patching_rect" : [ 8.0, 144.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -347,7 +347,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 104.0, 296.0, 22.0 ],
+									"patching_rect" : [ 8.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "randomize.js",
 										"parameter_enable" : 0
@@ -457,23 +457,23 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-4", 0 ],
+									"order" : 1,
 									"source" : [ "obj-10", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"order" : 1,
-									"source" : [ "obj-2", 0 ]
+									"destination" : [ "obj-8", 0 ],
+									"order" : 0,
+									"source" : [ "obj-10", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"order" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
 
