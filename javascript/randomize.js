@@ -33,8 +33,8 @@ function pitch(value) {
   var order = input[INLET_ORDER];
   for (var i = 0; i < values.length; i++) { 
     if (Math.random() < order) {
-      if (i + 1 < values.length) {
-        const newIndex = getRandomBetween(i + 1, values.length);
+      if (i + 1 < values.length - 1) {
+        const newIndex = getRandomBetween(i + 1, values.length - 1);
         const curr = values[newIndex];
         values[newIndex] = values[i];
         values[i] = curr;
@@ -46,7 +46,6 @@ function pitch(value) {
       }
     }
   }
-  log(values);
   arr.splice(2, values.length, values);
   outlet(0, arr.join(" "));
 }
