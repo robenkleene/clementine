@@ -99,7 +99,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 120.0, 360.0, 31.0, 22.0 ],
+					"patching_rect" : [ 112.0, 360.0, 31.0, 22.0 ],
 					"text" : "t b s"
 				}
 
@@ -304,7 +304,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -332,12 +331,12 @@
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "randomize",
+										"filename" : "randomize.js",
 										"parameter_enable" : 0
 									}
 ,
