@@ -46,6 +46,8 @@ function pitch(value) {
       }
     }
   }
+  log(values);
+  arr.splice(2, values.length, values);
   outlet(0, arr.join(" "));
 }
 
@@ -55,7 +57,7 @@ function pitch(value) {
 function velocity(value) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
-  log(values);
+  // log(values);
   outlet(0, arr.join(" "));
 }
 
@@ -64,7 +66,7 @@ function velocity(value) {
 function duration(value) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
-  log(values);
+  // log(values);
   outlet(0, arr.join(" "));
 }
 
