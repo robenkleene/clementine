@@ -40,6 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 616.0, 48.0, 15.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 8.0, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -581,23 +607,6 @@
 					}
 ,
 					"varname" : "Duration"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.4 ],
-					"bordercolor" : [ 0.137255, 0.145098, 0.160784, 0.0 ],
-					"id" : "obj-263",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 408.0, 88.0, 16.0, 16.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 240.0, 64.0 ],
-					"rounded" : 10
 				}
 
 			}
@@ -1330,7 +1339,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 200.0, 192.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 40.0, 8.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 8.0, 24.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "PItch",
@@ -1367,7 +1376,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 88.0, 64.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 48.0, 8.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Steps",
@@ -1404,6 +1413,23 @@
 					}
 ,
 					"varname" : "live.step"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.4 ],
+					"bordercolor" : [ 0.137255, 0.145098, 0.160784, 0.0 ],
+					"id" : "obj-263",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 408.0, 88.0, 16.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 240.0, 64.0 ],
+					"rounded" : 10
 				}
 
 			}
@@ -1688,6 +1714,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -1753,6 +1786,7 @@
 			"obj-36" : [ "Randomize_Velocity", "Velocity", 0 ],
 			"obj-37" : [ "Randomize_Duration", "Duration", 0 ],
 			"obj-42" : [ "live.text", "live.text", 0 ],
+			"obj-43" : [ "live.button", "live.button", 0 ],
 			"obj-78" : [ "PItch", "Pitch", 0 ],
 			"obj-81" : [ "Velocity", "Velocity", 0 ],
 			"parameterbanks" : 			{
