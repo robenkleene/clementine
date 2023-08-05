@@ -31,7 +31,7 @@ function pitch(value) {
   var values = arr.slice(2)
   var repeat = input[INLET_REPEAT];
   var order = input[INLET_ORDER];
-  for (var i = 0; i < values.length; i++) { 
+  for (var i = 0; i < values.length; i++) {
     if (Math.random() < order) {
       if (i + 1 < values.length - 1) {
         const newIndex = getRandomBetween(i + 1, values.length - 1);
@@ -46,7 +46,7 @@ function pitch(value) {
       }
     }
   }
-  arr = arr.slice(0, 1).concat(values);
+  arr = arr.slice(0, 2).concat(values);
   outlet(0, arr.join(" "));
 }
 
