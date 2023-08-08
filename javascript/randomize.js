@@ -38,7 +38,6 @@ function pitch(value) {
     if (Math.random() < repeat) {
       if (i + 1 < values.length) {
         values[i + 1] = values[i];
-        log(["repeat", i, i + 1]);
       }
     }
     if (Math.random() < order) {
@@ -47,7 +46,6 @@ function pitch(value) {
         const curr = values[newIndex];
         values[newIndex] = values[i];
         values[i] = curr;
-        log(["move", i, newIndex]);
       }
     }
   }
