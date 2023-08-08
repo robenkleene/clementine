@@ -35,6 +35,12 @@ function pitch(value) {
   var repeat = input[INLET_REPEAT];
   var order = input[INLET_ORDER];
   for (var i = 0; i < values.length; i++) {
+    if (Math.random() < repeat) {
+      if (i + 1 < values.length) {
+        values[i + 1] = values[i];
+        log(["repeat", i, i + 1]);
+      }
+    }
     if (Math.random() < order) {
       if (i + 1 < values.length) {
         const newIndex = getRandomBetween(i + 1, values.length - 1);
@@ -42,12 +48,6 @@ function pitch(value) {
         values[newIndex] = values[i];
         values[i] = curr;
         log(["move", i, newIndex]);
-      }
-    }
-    if (Math.random() < repeat) {
-      if (i + 1 < values.length) {
-        values[i + 1] = values[i];
-        log(["repeat", i, i + 1]);
       }
     }
   }
