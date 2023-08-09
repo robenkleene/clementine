@@ -54,7 +54,7 @@ function velocity(value) {
   var factor = input[INLET_VELOCITY];
   for (var i = 0; i < values.length; i++) {
     var max = values[i];
-    var range = Math.floor(s * factor);
+    var range = Math.floor(max * factor);
     var min = max - range;
     values[i] = Math.round(getRandomBetween(min, max));
   }
