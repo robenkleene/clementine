@@ -40,6 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "live.tab",
+					"num_lines_patching" : 1,
+					"num_lines_presentation" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 383.0, 319.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 248.0, 64.0, 168.0, 16.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "All", "Pitch", "Velocity", "Duration" ],
+							"parameter_longname" : "Mode",
+							"parameter_mmax" : 3,
+							"parameter_shortname" : "Mode",
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 9
+						}
+
+					}
+,
+					"varname" : "Mode"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 383.0, 351.0, 57.0, 22.0 ],
+					"text" : "mode $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1448,7 +1489,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 88.0, 472.0, 400.0, 170.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 72.0, 400.0, 170.0 ],
+					"presentation_rect" : [ 0.0, 88.0, 400.0, 170.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1782,6 +1823,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -1836,6 +1884,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-1" : [ "live.step", "live.step", 0 ],
@@ -1850,6 +1905,7 @@
 			"obj-43" : [ "live.button", "live.button", 0 ],
 			"obj-78" : [ "PItch", "Pitch", 0 ],
 			"obj-81" : [ "Velocity", "Velocity", 0 ],
+			"obj-84" : [ "Mode", "Mode", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
