@@ -13,11 +13,17 @@ INLET_DURATION = 5;
 // Store input
 var input = [[], 0, 0, 0, 0, 0];
 
-function getRandomBetween(min, max) {
+function getRandomArbitrary(min, max) {
   if (min == max) {
     return min;
   }
   return Math.floor(Math.random() * (max - min) + min) + 1;
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function msg_float(value) {
@@ -37,7 +43,7 @@ function pitch(value) {
     }
     if (Math.random() < order) {
       if (i + 1 < values.length) {
-        const newIndex = getRandomBetween(i + 1, values.length - 1);
+        const newIndex = getRandomArbitrary(i + 1, values.length - 1);
         const curr = values[newIndex];
         values[newIndex] = values[i];
         values[i] = curr;
@@ -56,18 +62,23 @@ function velocity(value) {
     var max = values[i];
     var range = Math.floor(max * factor);
     var min = max - range;
-    values[i] = Math.round(getRandomBetween(min, max));
+    values[i] = getRandomInt(min, max);
   }
   arr = arr.slice(0, 2).concat(values);
   outlet(0, arr.join(" "));
 }
 
-// Same as velocity, but we have fixed values:
-// 7.5 15 30 60 120 240 480 960
 function duration(value) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
-  // log(values);
+  var factor = input[INLET_DURATION];
+  for (var i = 0; i < values.length; i++) {
+    var max = values[i];
+    var range = Math.floor(max * factor);
+    var min = max - range;
+    values[i] = getRandomInt(min, max);
+  }
+  arr = arr.slice(0, 2).concat(values);
   outlet(0, arr.join(" "));
 }
 
