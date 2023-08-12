@@ -58,11 +58,16 @@ function velocity(value) {
   var arr = arrayfromargs(messagename, arguments);
   var values = arr.slice(2)
   var factor = input[INLET_VELOCITY];
+  var rests = input[INLET_RESTS];
   for (var i = 0; i < values.length; i++) {
-    var max = values[i];
-    var range = Math.floor(max * factor);
-    var min = max - range;
-    values[i] = getRandomInt(min, max);
+    if (Math.random() < rests) {
+      values[i] = 0;
+    } else {
+      var max = values[i];
+      var range = Math.floor(max * factor);
+      var min = max - range;
+      values[i] = getRandomInt(min, max);
+    }
   }
   arr = arr.slice(0, 2).concat(values);
   outlet(0, arr.join(" "));
