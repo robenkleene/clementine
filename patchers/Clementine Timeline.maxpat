@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 523.0, 100.0, 679.0, 983.0 ],
+		"rect" : [ 192.0, 100.0, 905.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,22 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Ableton Sans Medium Regular",
+					"fontsize" : 11.0,
+					"hidden" : 1,
+					"id" : "obj-30",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 170.0, 132.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 170.0, 132.0, 20.0 ],
+					"text" : "Device vertical limit"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "live.tab",
 					"num_lines_patching" : 1,
@@ -50,7 +66,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 383.0, 319.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 248.0, 64.0, 168.0, 16.0 ],
+					"presentation_rect" : [ 392.0, 0.0, 168.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "All", "Pitch", "Velocity", "Duration" ],
@@ -127,7 +143,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 416.0, 192.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 184.0, 8.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 64.0, 128.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -191,7 +207,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 352.0, 256.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 408.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 600.0, 56.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Randomize_Duration",
@@ -217,7 +233,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 304.0, 256.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 368.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 600.0, 8.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Randomize_Velocity",
@@ -243,7 +259,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 256.0, 256.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 328.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 568.0, 104.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Randomize_Rests",
@@ -269,7 +285,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 208.0, 256.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 288.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 568.0, 56.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Randomize_Repeat",
@@ -295,7 +311,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 160.0, 256.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 248.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 568.0, 8.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Randomize_Order",
@@ -561,7 +577,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.0, 88.0, 16.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 248.0, 0.0, 208.0, 64.0 ],
+					"presentation_rect" : [ 568.0, 0.0, 80.0, 160.0 ],
 					"rounded" : 10
 				}
 
@@ -636,7 +652,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 288.0, 160.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 88.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 40.0, 40.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Velocity",
@@ -661,7 +677,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 352.0, 192.0, 48.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.0, 8.0, 40.0, 15.0 ],
+					"presentation_rect" : [ 8.0, 128.0, 40.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "7.5", "15", "30", "60", "120", "240", "480", "960" ],
@@ -831,7 +847,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 536.0, 184.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.0, 32.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 8.0, 96.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -1444,7 +1460,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 88.0, 64.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.0, 8.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 0.0, 40.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Steps",
@@ -1469,7 +1485,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 88.0, 472.0, 400.0, 170.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 88.0, 400.0, 170.0 ],
+					"presentation_rect" : [ 128.0, 16.0, 432.0, 144.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1496,7 +1512,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 408.0, 88.0, 16.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 240.0, 64.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 120.0, 160.0 ],
 					"rounded" : 10
 				}
 
