@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 283.0, 100.0, 905.0, 983.0 ],
+		"rect" : [ 283.0, 100.0, 1196.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 600.0, 376.0, 41.0, 22.0 ],
+					"text" : "notein"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "int: Velocity",
 					"id" : "obj-59",
