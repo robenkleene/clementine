@@ -344,14 +344,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "notes.js",
+				"name" : "clementine_notes.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "randomize.js",
+				"name" : "clementine_randomize.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",

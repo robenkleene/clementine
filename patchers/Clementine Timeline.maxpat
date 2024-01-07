@@ -1585,7 +1585,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 728.0, 112.0, 105.0, 22.0 ],
-					"text" : "import scales.json"
+					"text" : "import clementine_scales.json"
 				}
 
 			}
@@ -2653,14 +2653,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "notes.js",
+				"name" : "clementine_notes.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "randomize.js",
+				"name" : "clementine_randomize.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",

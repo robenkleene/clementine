@@ -3,4 +3,4 @@
 set -euo pipefail
 
 cd "$(dirname "$0")" || exit 1
-jq --raw-output 'keys_unsorted | join(" ")' ../../javascript/scales.json
+jq --raw-output 'keys_unsorted | join(" ")' ../../javascript/clementine_scales.json
