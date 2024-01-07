@@ -1199,7 +1199,7 @@
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js randomize"
+									"text" : "js clementine_randomize"
 								}
 
 							}
@@ -1845,7 +1845,7 @@
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js notes"
+									"text" : "js randomize_notes"
 								}
 
 							}
