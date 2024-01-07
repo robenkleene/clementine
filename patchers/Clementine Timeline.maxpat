@@ -1845,7 +1845,7 @@
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js randomize_notes"
+									"text" : "js celementine_notes"
 								}
 
 							}
