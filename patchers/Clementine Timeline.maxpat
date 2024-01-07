@@ -1195,11 +1195,11 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 8.0, 104.0, 296.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "randomize",
+										"filename" : "clementine_randomize",
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js randomize"
+									"text" : "js clementine_randomize"
 								}
 
 							}
@@ -1585,7 +1585,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 728.0, 112.0, 105.0, 22.0 ],
-					"text" : "import scales.json"
+					"text" : "import clementine_scales.json"
 				}
 
 			}
@@ -1841,11 +1841,11 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 16.0, 192.0, 152.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "notes",
+										"filename" : "clementine_notes",
 										"parameter_enable" : 0
 									}
 ,
-									"text" : "js notes"
+									"text" : "js clementine_notes"
 								}
 
 							}
@@ -2653,14 +2653,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "notes.js",
+				"name" : "clementine_notes.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "randomize.js",
+				"name" : "clementine_randomize.js",
 				"bootpath" : "/Users/Shared/Max 8/Packages/clementine/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
